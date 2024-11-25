@@ -14,9 +14,9 @@
         <th>Location</th>
     </tr>
     <tr th:each="userResponseDTO : ${userResponseDTOS}">
-        <td th:text=""></td>
-        <td th:text=""></td>
-        <td th:text=""></td>
+        <td th:text="${userResponseDTO.username()}"></td>
+        <td th:text="${userResponseDTO.profileResponseDTO().bio()}"></td>
+        <td th:text="${userResponseDTO.profileResponseDTO().location()}"></td>
     </tr>
 </table>
 </body>
